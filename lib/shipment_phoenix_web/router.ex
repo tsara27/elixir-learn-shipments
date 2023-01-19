@@ -20,6 +20,12 @@ defmodule ShipmentPhoenixWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/api", ShipmentPhoenixWeb.Api do
+    pipe_through :api
+
+    resources "/companies", CompanyController
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", ShipmentPhoenixWeb do
   #   pipe_through :api
