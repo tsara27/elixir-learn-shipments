@@ -1,4 +1,4 @@
-defmodule ShipmentPhoenixWeb.Api.CompanyView do
+defmodule ShipmentPhoenixWeb.CompanyView do
   use ShipmentPhoenixWeb, :view
   alias ShipmentPhoenixWeb.CompanyView
 
